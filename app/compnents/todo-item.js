@@ -7,7 +7,7 @@ const update = async (id, isDone, refresh) => {
         body: JSON.stringify({ id, isDone })
     };
     fetch(`/api/todo/update`, requestOptions);
-   // refresh();
+    refresh();
 }
 
 const deleteRow = async (id, refresh) => {

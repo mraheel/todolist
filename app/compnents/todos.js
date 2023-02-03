@@ -1,6 +1,6 @@
 import TodoItem from "./todo-item";
 const getTodos = async () => {
-    let todos = await fetch(`http://localhost:3000/api/todo/list`);
+    let todos = await fetch(`${process.env.API_URL}/api/todo/list`);
     return todos.json();
 }
 
